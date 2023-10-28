@@ -1,0 +1,66 @@
+@font-face {
+    font-family: ara;
+    src: url(./assets/fonts/Ara_Hamah_Zanki_Regular.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+}
+
+.App {
+    width: 100%;
+
+    .container_wrapper {
+        width: 1442px;
+        max-width: 1442px;
+        margin-left: auto;
+        margin-right: auto;
+        background: red url('./assets/svg/bg.svg') center/cover;
+        min-height: 3403px;
+
+        header#Header {
+            * {
+                font-family: ara, sans-serif;
+            }
+        }
+    }
+}
+
+.round_left_btn {
+    background: url('./assets/svg/round_left_btn.svg') center/100% 100%;
+    position: relative;
+    width: 272.02px;
+    height: 198px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    span {
+        font-size: 40px;
+        color: #fff;
+        font-weight: normal;
+    }
+}
+
+.round_full_btn{
+    background: url('./assets/svg/round_full_shape.svg') center / 100% 100%;
+    position: relative;
+    width: 253.02px;
+    height: 83px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    span{
+        font-size: 29px;
+        color: #fff;
+    }
+}
