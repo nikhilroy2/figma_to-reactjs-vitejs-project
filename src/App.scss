@@ -3,6 +3,20 @@
     src: url(./assets/fonts/Ara_Hamah_Zanki_Regular.otf);
 }
 
+@font-face {
+    font-family: aspect;
+    src: url(./assets/fonts/ASPECT_RANGE_DEMO.otf);
+}
+
+@font-face {
+    font-family: kingsman;
+    src: url(./assets/fonts/Kingsman_Demo.ttf);
+}
+
+@font-face {
+    font-family: nexa;
+    src: url(./assets/fonts/Nexa-ExtraLight.ttf);
+}
 
 * {
     box-sizing: border-box;
@@ -22,8 +36,10 @@ body {
         max-width: 1442px;
         margin-left: auto;
         margin-right: auto;
-        background: red url('./assets/svg/bg.svg') center/cover;
-        min-height: 3403px;
+        background: url('./assets/svg/bg.svg') center/cover;
+        height: 3403px;
+        overflow: hidden;
+        position: relative;
 
         header#Header {
             * {
@@ -50,7 +66,7 @@ body {
     }
 }
 
-.round_full_btn{
+.round_full_btn {
     background: url('./assets/svg/round_full_shape.svg') center / 100% 100%;
     position: relative;
     width: 253.02px;
@@ -59,8 +75,136 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    span{
+
+    span {
         font-size: 29px;
         color: #fff;
+    }
+}
+
+.round_right_btn {
+    background: url('./assets/svg/rounded_right_btn.svg') center/100% 100%;
+    position: relative;
+    width: 272.02px;
+    height: 198px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    span {
+        font-size: 40px;
+        color: #fff;
+        font-weight: normal;
+    }
+}
+
+.hero_section {
+    text-align: center;
+
+    h1 {
+        font-family: aspect, sans-serif;
+        font-size: 129px;
+        color: #1D2755;
+    }
+
+    h2 {
+        font-family: ara, sans-serif;
+        font-size: 172px;
+        color: #1D2755;
+    }
+
+    img {
+        position: absolute;
+        top: 130px;
+        pointer-events: none;
+        user-select: none;
+        // border: solid red;
+    }
+}
+
+.minor_shape_section {
+    width: 1471px;
+    // border: solid;
+    height: 2374px;
+    background: url(./assets/png/minor_shape.png) center / 100% 100%;
+    margin-top: 745px;
+    // margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .section_content {
+        margin-top: 365px;
+
+        .box_1 {
+            // border: solid red;
+            width: 950.81px;
+            margin-left: 356px;
+
+            h2 {
+                font-weight: 400;
+
+                span {
+                    display: block;
+                    // text-align: center;
+                    color: #FFFFFF;
+                    font-weight: 400;
+
+                    &:nth-child(1) {
+                        font-family: kingsman, sans-serif;
+                        font-size: 98.04px;
+                        line-height: auto;
+                    }
+
+                    &:nth-child(2) {
+                        font-family: ara, sans-serif;
+                        font-size: 108.23px;
+                        // line-height: 55px;
+                        margin-left: 118.68px;
+                        white-space: nowrap;
+                        display: block;
+                        margin-top: -50px;
+                    }
+                }
+            }
+
+        }
+
+        .box_2 {
+            // border: solid;
+            margin-left: 136.75px;
+            width: 1239.37px;
+            position: relative;
+            left: -35px;
+
+            p {
+                margin-top: 18.41px;
+                color: rgba(255, 255, 255, 0.80);
+                text-align: center;
+                font-family: nexa, sans-serif;
+                font-size: 46px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .box_3 {
+            // border: solid;
+            position: relative;
+            margin-top: 44.61px;
+            p {
+                color: rgba(255, 255, 255, 0.80);
+                text-align: center;
+                font-family: ara, sans-serif;
+                font-size: 62px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 106.333%;
+                /* 65.927px */
+            }
+        }
+
     }
 }
