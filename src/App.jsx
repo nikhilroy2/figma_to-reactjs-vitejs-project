@@ -6,9 +6,52 @@ import Logo from './assets/png/logo.png';
 import MapImg from './assets/svg/map.svg';
 import WhatsAppImg from './assets/svg/whatsapp.svg';
 import KebabImg from './assets/png/special_kebab.png';
+import InstagramImg from './assets/svg/instagram.svg';
+import FBImg from './assets/svg/facebook.svg';
+import TwitterImg from './assets/svg/twitter.svg';
+import WhatsappIcon from './assets/svg/whatsapp_icon.svg';
+import TiktokImg from './assets/svg/tiktok.svg';
+import SnapChatImg from './assets/svg/snapechat.svg';
 function App() {
   const [count, setCount] = useState(0)
-
+  const social_list = [
+    {
+      id: 1,
+      name: 'instagram',
+      link: '#',
+      img: InstagramImg
+    },
+    {
+      id: 2,
+      name: 'facebook',
+      link: '#',
+      img: FBImg
+    },
+    {
+      id: 3,
+      name: 'twitter',
+      link: '#',
+      img: TwitterImg
+    },
+    {
+      id: 4,
+      name: 'whatsapp',
+      link: '#',
+      img: WhatsappIcon
+    },
+    {
+      id: 5,
+      name: 'tiktok',
+      link: '#',
+      img: TiktokImg
+    },
+    {
+      id: 5,
+      name: 'snapchat',
+      link: '#',
+      img: SnapChatImg
+    },
+  ]
   return (
     <div className="App">
       <div className="container_wrapper">
@@ -74,6 +117,34 @@ function App() {
                   <br />
                   ومميزة، وضيافة دافئة، وجو ممتع نتشاركه.
                 </p>
+              </div>
+              <div className="box box_4">
+                <button className="order_btn">
+                  Order Now
+                </button>
+              </div>
+
+              <div className="box box_5">
+                <ul className="social_list">
+                  <li>
+                    <h4>
+                      Follow Us
+                    </h4>
+                  </li>
+
+                  {
+                    social_list.map(v => {
+                      return (
+                        <li key={v.id}>
+                          <a href={v.link}>
+                            <img src={v.img} alt={v.name} />
+                          </a>
+                        </li>
+                      )
+                    })
+                  }
+
+                </ul>
               </div>
             </div>
           </section>

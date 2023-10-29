@@ -25,7 +25,7 @@
 }
 
 body {
-    background: #fff;
+    background: #222;
 }
 
 .App {
@@ -135,7 +135,7 @@ body {
     transform: translateX(-50%);
 
     .section_content {
-        margin-top: 365px;
+        padding-top: 365px;
 
         .box_1 {
             // border: solid red;
@@ -179,7 +179,7 @@ body {
             left: -35px;
 
             p {
-                margin-top: 18.41px;
+                padding-top: 18.41px;
                 color: rgba(255, 255, 255, 0.80);
                 text-align: center;
                 font-family: nexa, sans-serif;
@@ -193,7 +193,9 @@ body {
         .box_3 {
             // border: solid;
             position: relative;
-            margin-top: 44.61px;
+            padding-top: 44.61px;
+            padding-bottom: 40px;
+
             p {
                 color: rgba(255, 255, 255, 0.80);
                 text-align: center;
@@ -202,7 +204,55 @@ body {
                 font-style: normal;
                 font-weight: 400;
                 line-height: 106.333%;
+                height: 170px;
                 /* 65.927px */
+            }
+        }
+
+        .box_4 {
+            // text-align: center;
+            margin-left: 461px;
+
+            .order_btn {
+                font-family: ara, sans-serif;
+                width: 488.938px;
+                height: 161.463px;
+                border-radius: 157px;
+                background: linear-gradient(180deg, #CDA26C 0%, #EFD1A0 100%);
+                box-shadow: 0px 34px 84px 0px rgba(0, 0, 0, 0.60), 0px 18px 24px 0px #EEDAB7 inset;
+                color: #000;
+                text-align: center;
+                font-size: 77px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 106.333%;
+                /* 81.877px */
+            }
+        }
+
+        .box_5 {
+            .social_list {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 51px;
+                h4 {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: ara, sans-serif;
+                    font-size: 65px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 106.333%;
+                }
+                li{
+                    margin-right: 15px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+
             }
         }
 
